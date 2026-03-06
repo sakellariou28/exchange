@@ -1,0 +1,23 @@
+This is a new project called "Fallback". What we will be writing today is going to be the front end of the application. At some point in the future, this front will have a backend to go with it, in the form of an API, but right now we do not have any server and no API to start with. So we  will infer the API needed by the sql schema + data that we do have and the UI that we need to have. I have attached the "FallBack Script.sql" file that contains the schema + data that we're going to use. 
+
+Use the current "package.json" to understand and respect the packages already present. You need to use these packages in your implementation, plus any other ones you may need of course. You can change their versions though if you need to do so. 
+
+Keep in mind that everything we build must work whether we have a server to serve our assumed API or we are serving the data from json files instead (we must use the provided data from the attached sql file and save them in json files using e.g. an array of the appropriate json objects, and serve them instead to our UI until we have a server up and running, but we must also be able to switch easily from the json files to the real API)
+
+Keep in mind that we need to use material UI, react router and internationalization. 
+
+Keep in mind that we must have wrappers (component) for all elements we need. So, basically never use, for example, a material ui form input element directly in a form, instead use the wrapper that we must have created for it.
+
+The application must have a login page. Because initially we don't have a server, we will assume authorization is going to be JWT and mock the login but we must also be able to switch off the mocking easily. 
+
+Once the user logs in, he must arrive at the dashboard. The dashboard must have a sticky top bar with a language switcher (English, Greek) on the right + a user avatar + name also on the right that once clicked will show a dropdown menu with options: "Logout". The dashboard must have a sticky left slider which will contain the main menu with options: "Home", "Requests" and their associated icons on their left. The sticky top bar will have a toggle button on the left that will contract the sticky left slider or expand it. The sticky left slider, once contracted will show only menu icons.
+
+The "Home" page is the page the user should arrive by default once logging in and it should currently have just a welcome message
+
+The "Requests" page must contain a search form + a paginated table with the requests. 
+
+The table must show the 6 most important columns (infer them from the schema/data), one of which must be the parent request with a link to view it that once clicked will open a modal with a form showing the parent request. Each row must also have an "actions" column that will contain an "edit" button, that once clicked will open a modal with a form showing the row request. Each row must also have an expand/contract button that once clicked will toggle visibility, inside the row and below its columns, of request members with links to view them that once clicked will open a modal containing the member details in a disabled form.
+
+The search form must be able to search for requests by their most important fields (infer them from schema/data), parent request, members. Once the form is submitted, the table msu then sho the results if any.
+
+If anything from what I described to you seems to not be correct based on what you infer from the schema/data then let me know so that we should decide together how to proceed. Begin.
