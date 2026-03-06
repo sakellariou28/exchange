@@ -1,7 +1,7 @@
 {
-  "name": "example-vite-v5",
+  "name": "fallback-frontend",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -12,13 +12,15 @@
   },
   "dependencies": {
     "@emotion/cache": "^11.14.0",
-    "@emotion/react": "^11.13.3",
-    "@emotion/styled": "^11.13.0",
-    "@nn-design-system/config": "^3.0.0",
-    "@nn-design-system/fonts": "^6.1.0",
-    "@nn-design-system/react-component-library": "workspace:^",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.0.1",
+    "@mui/material": "^7.0.1",
+    "i18next": "^25.0.2",
     "react": "~19.1.0",
-    "react-dom": "~19.1.0"
+    "react-dom": "~19.1.0",
+    "react-i18next": "^16.0.1",
+    "react-router-dom": "^7.4.0"
   },
   "devDependencies": {
     "@types/react": "^19.1.8",

@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "parentId": null,
+    "correlationId": "78b46688-a8fc-40ae-a557-4e3215826d6b",
+    "sourceChannel": "InterestForm",
+    "productCode": "",
+    "policyId": "0000009724-001",
+    "producerId": "123321",
+    "expirationDate": "2026-12-12T00:00:00",
+    "status": "Failed",
+    "payload": {
+      "policyId": "0000009724-001",
+      "producerId": "123321",
+      "expirationDate": "2026-12-12T00:00:00"
+    },
+    "createdAt": "2026-03-05T15:31:25.170",
+    "updatedAt": "2026-03-05T15:32:01.820"
+  },
+  {
+    "id": 2,
+    "parentId": 1,
+    "correlationId": "232cafeb-ff59-4279-9a28-584bd9d6378b",
+    "sourceChannel": "Fallback",
+    "productCode": "",
+    "policyId": "0000009724-001",
+    "producerId": "123321",
+    "expirationDate": "2026-12-12T00:00:00",
+    "status": "Completed",
+    "payload": {
+      "policyId": "0000009724-001",
+      "producerId": "123321",
+      "expirationDate": "2026-12-12T00:00:00"
+    },
+    "createdAt": "2026-03-05T15:39:27.157",
+    "updatedAt": "2026-03-05T15:39:49.597"
+  }
+]
+
